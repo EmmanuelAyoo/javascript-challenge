@@ -27,6 +27,8 @@ tableDisplay(tableData);
 // 'Filter Table' button
 var button = d3.select("#filter-btn");
 
+//function filterTable(event){};
+
 // filter the database
 button.on("click", function(event) {
   
@@ -35,7 +37,9 @@ button.on("click", function(event) {
   
   var filteredData = tableData;
   var inputId = document.getElementsByClassName("form-control");
-  
+
+  console.log(inputId);
+
   // iterate through all the input fields
   for (var i = 0; i < inputId.length; i++) {
 	
